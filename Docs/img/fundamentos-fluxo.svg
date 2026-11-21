@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="230" viewBox="0 0 900 230">
+  <rect width="900" height="230" rx="18" fill="#f8fafc"/>
+  <g font-family="Arial, sans-serif" text-anchor="middle">
+    <rect x="35" y="75" width="150" height="80" rx="12" fill="#0f172a"/>
+    <text x="110" y="110" fill="white" font-size="22" font-weight="bold">Entrada</text>
+    <text x="110" y="135" fill="#cbd5e1" font-size="14">dados e eventos</text>
+    <rect x="260" y="75" width="150" height="80" rx="12" fill="#2563eb"/>
+    <text x="335" y="110" fill="white" font-size="22" font-weight="bold">Variáveis</text>
+    <text x="335" y="135" fill="#dbeafe" font-size="14">let, const, var</text>
+    <rect x="485" y="75" width="150" height="80" rx="12" fill="#7c3aed"/>
+    <text x="560" y="110" fill="white" font-size="22" font-weight="bold">Decisão</text>
+    <text x="560" y="135" fill="#ede9fe" font-size="14">if e operadores</text>
+    <rect x="710" y="75" width="150" height="80" rx="12" fill="#059669"/>
+    <text x="785" y="110" fill="white" font-size="22" font-weight="bold">Resultado</text>
+    <text x="785" y="135" fill="#d1fae5" font-size="14">console ou DOM</text>
+  </g>
+  <g stroke="#64748b" stroke-width="4">
+    <line x1="185" y1="115" x2="250" y2="115"/>
+    <line x1="410" y1="115" x2="475" y2="115"/>
+    <line x1="635" y1="115" x2="700" y2="115"/>
+  </g>
+</svg>
