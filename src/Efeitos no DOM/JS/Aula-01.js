@@ -27,4 +27,3 @@ console.log(tabContent[index].dataset.anime);
 console.log(tabContent[index].classList.add('ativo', tabContent[index].dataset.anime));
 
 const direcao = tabContent[index].dataset.anime;
-
