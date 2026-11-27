@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="360" viewBox="0 0 980 360">
+  <rect width="980" height="360" rx="18" fill="#f8fafc"/>
+  <g font-family="Arial, sans-serif">
+    <text x="490" y="42" text-anchor="middle" font-size="24" font-weight="bold" fill="#0f172a">Efeitos no DOM: visão geral</text>
+
+    <rect x="40" y="90" width="180" height="70" rx="12" fill="#2563eb"/>
+    <text x="130" y="120" text-anchor="middle" font-size="18" font-weight="bold" fill="white">01-02</text>
+    <text x="130" y="142" text-anchor="middle" font-size="15" fill="white">Dataset + Modules</text>
+
+    <rect x="250" y="90" width="180" height="70" rx="12" fill="#7c3aed"/>
+    <text x="340" y="120" text-anchor="middle" font-size="18" font-weight="bold" fill="white">03-06</text>
+    <text x="340" y="142" text-anchor="middle" font-size="15" fill="white">UI + eventos</text>
+
+    <rect x="460" y="90" width="180" height="70" rx="12" fill="#0891b2"/>
+    <text x="550" y="120" text-anchor="middle" font-size="18" font-weight="bold" fill="white">07-10</text>
+    <text x="550" y="142" text-anchor="middle" font-size="15" fill="white">Timers + dados</text>
+
+    <rect x="670" y="90" width="270" height="70" rx="12" fill="#059669"/>
+    <text x="805" y="120" text-anchor="middle" font-size="18" font-weight="bold" fill="white">11-13</text>
+    <text x="805" y="142" text-anchor="middle" font-size="15" fill="white">Forms + CSS + persistência</text>
+
+    <g stroke="#64748b" stroke-width="4" fill="none">
+      <line x1="220" y1="125" x2="250" y2="125"/>
+      <line x1="430" y1="125" x2="460" y2="125"/>
+      <line x1="640" y1="125" x2="670" y2="125"/>
+    </g>
+
+    <rect x="40" y="210" width="900" height="100" rx="12" fill="#e2e8f0"/>
+    <text x="490" y="244" text-anchor="middle" font-size="18" font-weight="bold" fill="#0f172a">Fluxo de interação</text>
+    <text x="490" y="276" text-anchor="middle" font-size="16" fill="#475569">HTML + data-*  →  evento  →  JavaScript  →  estado/CSS  →  interface atualizada</text>
+  </g>
+</svg>

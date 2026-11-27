@@ -223,6 +223,76 @@ const numeros = [1, 2, 3, 4];
 const pares = numeros.filter((numero) => numero % 2 === 0);
 ```
 
+## ES Modules
+
+O módulo de Efeitos no DOM introduz a divisão do código em arquivos independentes.
+
+```js
+// configuracao.js
+export const ano = 2018;
+export default function mostrarAno() {
+  return ano;
+}
+```
+
+```js
+import mostrarAno, { ano } from "./configuracao.js";
+```
+
+- `export` torna valores ou funções disponíveis fora do módulo;
+- `export default` define uma exportação principal;
+- `import` carrega a exportação em outro arquivo;
+- `import * as config` agrupa todas as exportações em um objeto.
+
+## Temporizadores
+
+`setTimeout` executa uma função depois de um intervalo. `setInterval` repete a função até ser interrompido por `clearInterval`.
+
+```js
+const timer = setInterval(() => {
+  console.log("Executando");
+}, 1000);
+
+clearInterval(timer);
+```
+
+Os callbacks executados por temporizadores não devem depender do contexto implícito de `this`; arrow functions preservam o contexto do ponto em que foram criadas.
+
+## Forms e validação
+
+Os controles de formulário podem ser observados pelos eventos `keyup` e `change`. A interface de validação do navegador fornece métodos como `checkValidity`, `validationMessage` e `setCustomValidity`.
+
+```js
+if (!campo.checkValidity()) {
+  campo.setCustomValidity("Preencha o campo corretamente.");
+}
+```
+
+## Datas
+
+O objeto `Date` representa uma data e oferece métodos para obter ou alterar seus componentes.
+
+```js
+const agora = new Date();
+agora.getDate();
+agora.getDay();
+agora.getMonth();
+agora.getFullYear();
+agora.getHours();
+```
+
+O resultado de `getDay()` representa os dias da semana de domingo (`0`) a sábado (`6`).
+
+## LocalStorage
+
+`localStorage` permite persistir pares chave/valor no navegador para serem reutilizados em visitas posteriores.
+
+```js
+localStorage.setItem("cor", "azul");
+const cor = localStorage.getItem("cor");
+localStorage.removeItem("cor");
+```
+
 ## Escopo
 
 Escopo define em quais partes do código uma variável pode ser acessada.

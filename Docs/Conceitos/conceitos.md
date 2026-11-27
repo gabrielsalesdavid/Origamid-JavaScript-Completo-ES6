@@ -275,6 +275,95 @@ console.log(botao.dataset.acao); // "abrir"
 
 `dataset` transforma `data-nome-exemplo` em `elemento.dataset.nomeExemplo`.
 
+## Efeitos no DOM
+
+O módulo `Efeitos no DOM` reúne componentes e APIs utilizados para criar comportamentos dinâmicos:
+
+| Aula | Conceito aplicado |
+|---|---|
+| 01 | `dataset` e atributos `data-*` |
+| 02 | ES Modules, `export`, `import` e exportação default |
+| 03 | Modal com abertura, fechamento e clique no fundo |
+| 04 | Tooltip criado dinamicamente com eventos de mouse |
+| 05 | Menu dropdown e fechamento ao clicar fora |
+| 06 | Propagação de eventos e clique fora |
+| 07 | `setTimeout`, `setInterval` e limpeza de timers |
+| 08 | Menu mobile com eventos de clique e toque |
+| 09 | Animação de números com `MutationObserver` e `setInterval` |
+| 10 | Objeto `Date`, dias da semana e horários de funcionamento |
+| 11 | Eventos de formulários, validação e dados de campos |
+| 12 | Construção dinâmica de estilos CSS e botão de exemplo |
+| 13 | Persistência de estilos com `localStorage` |
+
+### Modal
+
+O modal controla um estado visual por meio de uma classe ativa no container:
+
+```js
+containerModal.classList.add("ativo");
+containerModal.classList.remove("ativo");
+```
+
+O clique fora pode ser identificado comparando `event.target` com `containerModal`.
+
+### Tooltip
+
+Um tooltip pode ser criado no `mouseover`, posicionado no `mousemove` e removido no `mouseleave`.
+
+```js
+const tooltip = document.createElement("div");
+tooltip.classList.add("tooltip");
+tooltip.innerText = elemento.getAttribute("aria-label");
+document.body.appendChild(tooltip);
+```
+
+### Dropdown e clique fora
+
+Menus condicionais devem responder a interação com o próprio componente e fechar ao detectar uma ação fora dele. A técnica registra eventos no elemento `html`, verifica se o alvo pertence ao menu e remove os listeners após o fechamento.
+
+### Menu mobile
+
+O menu mobile combina eventos de `click` e `touchstart`, estados CSS ativos e uma função que detecta clique fora.
+
+### MutationObserver
+
+`MutationObserver` observa alterações em atributos ou nós de um elemento. Ele pode iniciar uma animação quando o elemento recebe uma classe ativa.
+
+```js
+const observer = new MutationObserver((mutacoes) => {
+  if (mutacoes[0].target.classList.contains("ativo")) {
+    observer.disconnect();
+  }
+});
+
+observer.observe(elemento, { attributes: true });
+```
+
+### Objeto Date e horário de funcionamento
+
+`Date` permite comparar o dia atual e o horário atual com dias e horários configurados em atributos `data-*`.
+
+```js
+const dias = "1,2,3,4,5".split(",").map(Number);
+const diaAtual = new Date().getDay();
+const aberto = dias.includes(diaAtual);
+```
+
+### Formulários
+
+Os formulários podem fornecer dados por meio de `event.target.name` e `event.target.value`. A validação nativa usa `checkValidity`, `validationMessage` e `setCustomValidity`.
+
+### Button Creator e LocalStorage
+
+Os exemplos das aulas 12 e 13 conectam controles de formulário a propriedades CSS do botão. Os valores podem ser aplicados e exibidos como texto CSS.
+
+```js
+btn.style.backgroundColor = valor;
+cssText.innerText = btn.style.cssText;
+```
+
+Na aula 13, o mesmo padrão usa `localStorage` para restaurar as escolhas ao recarregar a página.
+
 ![Árvore DOM e fluxo de eventos](../img/dom-eventos.svg)
 
 ![Relação entre constructor, prototype e instância](../img/objetos-prototype.svg)
@@ -305,3 +394,15 @@ console.log(botao.dataset.acao); // "abrir"
 | Objetos | 08 | Function |
 | Objetos | 09 | Object |
 | Efeitos no DOM | 01 | Dataset |
+| Efeitos no DOM | 02 | Modules |
+| Efeitos no DOM | 03 | Modal |
+| Efeitos no DOM | 04 | Tooltip |
+| Efeitos no DOM | 05 | Dropdown Menu |
+| Efeitos no DOM | 06 | Event Bubble |
+| Efeitos no DOM | 07 | Set Timeout e Set Interval |
+| Efeitos no DOM | 08 | Menu Mobile |
+| Efeitos no DOM | 09 | Animação de números |
+| Efeitos no DOM | 10 | Objeto Date |
+| Efeitos no DOM | 11 | Forms |
+| Efeitos no DOM | 12 | Button Creator |
+| Efeitos no DOM | 13 | LocalStorage |

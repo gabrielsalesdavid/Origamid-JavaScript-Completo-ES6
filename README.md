@@ -9,26 +9,27 @@ Repositório de estudo do curso JavaScript Completo ES6 da Origamid. Aqui estão
 | Fundamentos | [`src/JS Para Iniciantes/`](./src/JS%20Para%20Iniciantes/) | variáveis, operadores, condicionais, funções, objetos, arrays e escopo |
 | DOM | [`src/DOM Para Iniciantes/`](./src/DOM%20Para%20Iniciantes/) | seleção, eventos, classes, travessia, tabs, accordion e scroll |
 | Objetos | [`src/Objetos/`](./src/Objetos/) | constructor, prototype, native objects, String, Array, Function e Object |
-| Efeitos no DOM | [`src/Efeitos no DOM/`](./src/Efeitos%20no%20DOM/) | primeiro exercício de dados customizados com `dataset` |
+| Efeitos no DOM | [`src/Efeitos no DOM/`](./src/Efeitos%20no%20DOM/) | dataset, modules, modal, tooltip, dropdown, timers, menu mobile, animações, datas, forms, estilos e `localStorage` |
 | Tabela verdade | [`src/Tabela Verdade/`](./src/Tabela%20Verdade/) | operadores booleanos `&&`, `||` e `!` |
 
 ## Documentação criada
 
-- [Fundamentos de JavaScript](./Doc/Fundamentos/fundamentos.md)
-- [Conceitos de JavaScript no Navegador](./Doc/Conceitos/conceitos.md)
+- [Fundamentos de JavaScript](./Docs/Fundamentos/fundamentos.md)
+- [Conceitos de JavaScript no Navegador](./Docs/Conceitos/conceitos.md)
 
 Os documentos incluem tabelas, exemplos de código e estes diagramas ilustrativos:
 
-- [Fluxo dos fundamentos](./Doc/img/fundamentos-fluxo.svg)
-- [Fluxo DOM e eventos](./Doc/img/dom-eventos.svg)
-- [Constructor, prototype e instância](./Doc/img/objetos-prototype.svg)
+- [Fluxo dos fundamentos](./Docs/img/fundamentos-fluxo.svg)
+- [Fluxo DOM e eventos](./Docs/img/dom-eventos.svg)
+- [Constructor, prototype e instância](./Docs/img/objetos-prototype.svg)
+- [Organização dos efeitos no DOM](./Docs/img/efeitos-dom.svg)
 
 ## Estrutura
 
 ```text
 .
 |-- README.md
-|-- Doc/
+|-- Docs/
 |   |-- Fundamentos/
 |   |   `-- fundamentos.md
 |   |-- Conceitos/
@@ -36,6 +37,7 @@ Os documentos incluem tabelas, exemplos de código e estes diagramas ilustrativo
 |   `-- img/
 |       |-- fundamentos-fluxo.svg
 |       |-- dom-eventos.svg
+|       |-- efeitos-dom.svg
 |       `-- objetos-prototype.svg
 `-- src/
     |-- JS Para Iniciantes/
@@ -54,13 +56,13 @@ Os documentos incluem tabelas, exemplos de código e estes diagramas ilustrativo
 
 Os exercícios são independentes e vários arquivos usam `console.log`, `prompt`, eventos ou classes presentes em HTML específico.
 
-## Progresso previsto
+## Progresso registrado
 
 - [x] JavaScript para iniciantes
 - [x] DOM para iniciantes
 - [x] Objetos
 - [x] Operadores booleanos
-- [ ] Efeitos no DOM: apenas a aula inicial está presente
+- [x] Efeitos no DOM: aulas 01 a 13
 
 ## Observações técnicas
 
